@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<title>${siteName!""}</title>
+<title>SCUT二手物品交易平台</title>
 <link rel="icon" href="/home/imgs/favicon.ico" type="image/x-icon">
 <link media="all" href="/home/css/index.css" type="text/css" rel="stylesheet">
 </head>
@@ -12,13 +12,9 @@
     <div class="container">
    		<div class="main center">
                 <div class="wrap-site mt20">
-            <div class="recom-title"></div>
+            
             <ul class="recom-list group">
-                <#if newsList??>
-                <#list newsList as news>
-                <li><a href="/home/index/news_detail?id=${news.id}" target="_top">${news.title}</a></li>
-                </#list>
-                </#if>
+                
             </ul>
         </div>
         <div class="label-wr center clearfix">
@@ -79,7 +75,7 @@
 </div>
 <div class="return-to-top"><a href="#"></a></div><!--返回顶部-->
  	<#include "../common/right_menu.ftl"/>
-	<#include "../common/bottom_footer.ftl"/> 
+
 <script  src="/home/js/jquery-3.1.1.min.js"></script>
 <script src="/home/js/common.js"></script>
 <script src="/home/js/index.js"></script>
