@@ -47,9 +47,7 @@ public class Student extends BaseEntity{
 	@Column(name="mobile",length=18)
 	private String mobile;//手机号
 	
-	@ValidateEntity(required=true,minLength=5,maxLength=12,errorMinLengthMsg="qq号最小5位",errorMaxLengthMsg="qq号长度不能大于12")
-	@Column(name="qq",length=18)
-	private String qq;//QQ号
+
 	
 	@ValidateEntity(required=false)
 	@Column(name="school",length=18)
@@ -60,12 +58,44 @@ public class Student extends BaseEntity{
 	private String academy;//所属学院
 	
 	@ValidateEntity(required=false)
-	@Column(name="grade",length=18)
-	private String grade;//所属年级
+	@Column(name="major",length=18)
+	private String major;//所属专业
 	
 	@ValidateEntity(required=false)
 	@Column(name="status",length=1)
 	private int status = STUDENT_STATUS_ENABLE;//学生状态，默认可用
+	@ValidateEntity(required=false)
+	@Column(name="dormitory")
+	private String dormitory;
+
+	@Override
+	public String toString() {
+		return "Student{" +
+				"sn='" + sn + '\'' +
+				", password='" + password + '\'' +
+				", headPic='" + headPic + '\'' +
+				", nickname='" + nickname + '\'' +
+				", mobile='" + mobile + '\'' +
+				", school='" + school + '\'' +
+				", academy='" + academy + '\'' +
+				", major='" + major + '\'' +
+				", status=" + status +
+				", dormitory='" + dormitory + '\'' +
+				", sex=" + sex +
+				'}';
+	}
+
+	public static int getStudentStatusEnable() {
+		return STUDENT_STATUS_ENABLE;
+	}
+
+	public static int getStudentStatusUnable() {
+		return STUDENT_STATUS_UNABLE;
+	}
+
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
+	}
 
 	public String getSn() {
 		return sn;
@@ -73,6 +103,22 @@ public class Student extends BaseEntity{
 
 	public void setSn(String sn) {
 		this.sn = sn;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getHeadPic() {
+		return headPic;
+	}
+
+	public void setHeadPic(String headPic) {
+		this.headPic = headPic;
 	}
 
 	public String getNickname() {
@@ -91,14 +137,6 @@ public class Student extends BaseEntity{
 		this.mobile = mobile;
 	}
 
-	public String getQq() {
-		return qq;
-	}
-
-	public void setQq(String qq) {
-		this.qq = qq;
-	}
-
 	public String getSchool() {
 		return school;
 	}
@@ -115,20 +153,12 @@ public class Student extends BaseEntity{
 		this.academy = academy;
 	}
 
-	public String getGrade() {
-		return grade;
+	public String getMajor() {
+		return major;
 	}
 
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
-
-	public String getHeadPic() {
-		return headPic;
-	}
-
-	public void setHeadPic(String headPic) {
-		this.headPic = headPic;
+	public void setMajor(String major) {
+		this.major = major;
 	}
 
 	public int getStatus() {
@@ -139,21 +169,25 @@ public class Student extends BaseEntity{
 		this.status = status;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getDormitory() {
+		return dormitory;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setDormitory(String dormitory) {
+		this.dormitory = dormitory;
 	}
 
-	@Override
-	public String toString() {
-		return "Student [sn=" + sn + ", password=" + password + ", headPic="
-				+ headPic + ", nickname=" + nickname + ", mobile=" + mobile
-				+ ", qq=" + qq + ", school=" + school + ", academy=" + academy
-				+ ", grade=" + grade + ", status=" + status + "]";
+	public boolean isSex() {
+		return sex;
 	}
+
+	public void setSex(boolean sex) {
+		this.sex = sex;
+	}
+
+	@ValidateEntity(required=false)
+	@Column(name="sex")
+	private boolean sex;
 
 	
 

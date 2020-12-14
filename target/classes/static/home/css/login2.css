@@ -5,11 +5,8 @@ body {
 	font-family:"Microsoft Yahei";
 	font-size:12px;
 	margin:0;
-	background: #fff url(../imgs/login_bg.jpg) ;
-	background-repeat: no-repeat;
 
-    background-size:cover;  
-    background-position: fixed;
+
 }
 ul {
 	padding:0;
@@ -222,7 +219,7 @@ width: 80px;_width: 75px;_font-size:12px;}
 	display:inline-block;
 	float:left;
 	height:41px;border-radius:4px;
-	background:rgb(100,203,179);border:none;cursor:pointer;
+	background:rgb(0,0,128);border:none;cursor:pointer;
 	*border-bottom:none;
 	color:#fff;
 	font-size:16px;padding:0 10px;*width:140px;
@@ -230,7 +227,7 @@ width: 80px;_width: 75px;_font-size:12px;}
 }
 input.button_blue:hover
 {
-	background:rgb(62,177,150);
+	background:rgb(0,0,128);
 	*border-bottom:none;
 	color:#fff;
 	text-decoration:none;

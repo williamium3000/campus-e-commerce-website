@@ -74,7 +74,7 @@ public class HomeStudentController {
 	public Result<Boolean> editInfo(Student student){
 		Student loginedStudent = (Student)SessionUtil.get(SessionConstant.SESSION_STUDENT_LOGIN_KEY);
 		loginedStudent.setAcademy(student.getAcademy());
-		loginedStudent.setGrade(student.getGrade());
+		loginedStudent.setMajor(student.getMajor());
 		loginedStudent.setMobile(student.getMobile());
 		loginedStudent.setNickname(student.getNickname());
 		loginedStudent.setQq(student.getQq());

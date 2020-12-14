@@ -61,7 +61,7 @@
                         	</div>
                         	<div class="value">
                         		<span id="user_college">${goods.student.academy!"该用户未填写学院信息"}</span>
-                        		<span id="user_grade">${goods.student.grade!"该用户未填写年级信息"}</span>
+                        		<span id="user_grade">${goods.student.major!"该用户未填写年级信息"}</span>
                         	</div>
                         </li>
                         <li class="ershou-seller">

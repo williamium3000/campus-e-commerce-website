@@ -14,30 +14,18 @@
 }
 </style>
 <header class="ease2">
-	    <a href="/home/index/index">
-	        <#if siteSetting.logo1??>
-	        <img class="logo ease2" src="/photo/view?filename=${siteSetting.logo1}" alt="${siteSetting.siteName}">
-	        <#else>
-	        <img class="logo ease2" src="/home/imgs/index_logo.png" alt="${siteSetting.siteName}">
-	    	</#if>
-	    </a>
+	   
 	    <div class="header-main center ease2">
 	        <a href="/home/index/index" class="slogan">
-	            <h1 class="s-main"></h1>
-	            <div class="s-submain"></div>
-	            <#if siteSetting.logo1??>
-		        <img src="/photo/view?filename=${siteSetting.logo2}" alt="${siteSetting.siteName!""}">
-		        <#else>
-	            <img src="/home/imgs/2shoujie_web_title.png" alt="${siteSetting.siteName!""}">
-	        	</#if>
+			<img src="/home/imgs/index_logo.png">
 	        </a>
 	        <div class="search-box-wr ease2">
 	            <div class="search-box center" >
-	               <button  class="search-submit" id="search-button" onclick="searchPro()">搜索</button> 
+	               <button  class="search-submit" id="search-button" onclick="searchPro()">search</button> 
 	                <div class="input-wr">
 	                    <img class="search-icon" src="/home/imgs/search-icon.png">
 	                    <div class="search-input">
-	                    <input name="keyword" id="keyword" x-webkit-speech="" placeholder="搜索你想要的商品" value="${name!""}" type="text">
+	                    <input name="keyword" id="keyword" x-webkit-speech="" placeholder="enter the commodity you want" value="${name!""}" type="text">
 	                    </div>
 	                </div>
 	            </div>

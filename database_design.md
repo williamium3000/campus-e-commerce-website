@@ -1,5 +1,4 @@
 ## student
-- account:varchar(30)
 - ID:int
 - name:varchar(30) 
 - sex:boolean

@@ -1,5 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-<title>欢迎登录${siteName!""}</title> 
+<title>欢迎登录scut二手市场</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="/home/css/login2.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/home/js/jquery-3.1.1.min.js"></script>
@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<h1 style="color: #4BC0A5">${siteName!""}<sup>2020</sup></h1>
+<h1 style="color: #000080">SCUT二手市场<sup>2020</sup></h1>
 
 <div class="login" style="margin-top:50px;">
     
@@ -27,7 +27,7 @@
             <div class="web_login" id="web_login">
                <div class="login-box">
 			<div class="login_form">
-				<div id="loginCue" class="cue">欢迎登陆</div>
+				<div id="loginCue" class="cue">Welcome to login</div>
 			
 				<form action="login" name="loginform" accept-charset="utf-8" id="login_form" class="loginForm" 
                     method="post">
@@ -46,7 +46,7 @@
                 </div>
                
                 	<div style="padding-left:50px;margin-top:20px;">
-                	<button id="login_button"type="button" value="登 录" style="width:150px;" class="button_blue" href="javascript::">登录按钮</button>
+                	<button id="login_button"type="button" value="登录" style="width:150px;" class="button_blue" href="javascript::">快速登陆</button>
                 		<!-- <input id="login_button"type="submit" value="登 录" style="width:150px;" class="button_blue"/> -->
                 	</div>
               </form>
@@ -64,7 +64,15 @@
     <div class="web_login">
         <form name="form2" id="regForm" accept-charset="utf-8"  action="register" method="post">
         <ul class="reg_form" id="reg-ul">
-        		<div id="userCue" class="cue">快速注册请注意格式</div>
+        
+                 <li>
+                 <label for="qq" class="input-tips2">姓名：</label>
+                    <div class="inputOuter2">
+                       
+                        <input type="text" id="name" name="name" maxlength="10" class="inputstyle2"/>
+                    </div>
+                   
+                </li>
                 <li>
                 	
                     <label for="user"  class="input-tips2">学号：</label>
@@ -89,14 +97,42 @@
                     
                 </li>
                 
+
                 <li>
-                 <label for="qq" class="input-tips2">QQ：</label>
+                 <label for="qq" class="input-tips2">性别：</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id="qq" name="qq" maxlength="10" class="inputstyle2"/>
+                        <input type="text" id="sex" name="sex" maxlength="10" class="inputstyle2"/>
                     </div>
                    
                 </li>
+                <li>
+                 <label for="qq" class="input-tips2">学院：</label>
+                    <div class="inputOuter2">
+                       
+                        <input type="text" id="college" name="college" maxlength="10" class="inputstyle2"/>
+                    </div>
+                   
+                </li>
+                
+                <li>
+                 <label for="qq" class="input-tips2">专业：</label>
+                    <div class="inputOuter2">
+                       
+                        <input type="text" id="major" name="major" maxlength="10" class="inputstyle2"/>
+                    </div>
+                   
+                </li>
+                
+                <li>
+                 <label for="qq" class="input-tips2">宿舍：</label>
+                    <div class="inputOuter2">
+                       
+                        <input type="text" id="domitory" name="domitory" maxlength="10" class="inputstyle2"/>
+                    </div>
+                   
+                </li>
+                
                 
                 <li>
                     <div class="inputArea">
@@ -114,6 +150,5 @@
     </div>
     <!--注册end-->
 </div>
-<div class="jianyi">*推荐使用ie8或以上版本ie浏览器或Chrome内核浏览器访问本站</div>
 </body>
 </html>

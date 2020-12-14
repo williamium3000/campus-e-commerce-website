@@ -112,7 +112,7 @@ td{
                         <td style="vertical-align:middle;">${student.qq!""}</td>
                         <td style="vertical-align:middle;">${student.school!""}</td>
                         <td style="vertical-align:middle;">${student.academy!""}</td>
-                        <td style="vertical-align:middle;">${student.grade!""}</td>
+                        <td style="vertical-align:middle;">${student.major!""}</td>
                         <td style="vertical-align:middle;" style="vertical-align:middle;"><font class="text-success">${student.createTime}</font></td>
                       </tr>
                     </#list>
