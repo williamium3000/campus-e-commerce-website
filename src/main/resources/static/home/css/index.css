@@ -175,16 +175,14 @@ div.center { position: relative; }
 .img img { width: 100%; height: 100%; }
 .item .info { padding: 10px; background-color: rgb(255, 255, 255); overflow: hidden; text-overflow: ellipsis; }
 .info > div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; overflow-wrap: break-word; word-break: break-all; }
-.info .price { padding-right: 3px; width: 57px; height: 30px; background-color: rgb(235, 80, 85); position: absolute; top: 5px; right: -5px; font-size: 16px; color: rgb(255, 255, 255); line-height: 30px; vertical-align: middle; text-align: center; overflow: visible; }
-.info .price::before { content: "锟�"; }
-.info .name { margin-bottom: 6px; width: 100%; height: 1.6em; line-height: 1.6em; font-size: 15px; }
-.name a { color: rgb(27, 129, 108); text-decoration: none; }
-.name a:hover { color: rgb(237, 78, 81); }
 
-.info .department { text-align: left; width: 35%; float: left; font-size: 1em; color: rgb(133, 141, 142);}
-.info .place { text-align: right; width: 55%; float: right; font-size: 1em; color: rgb(133, 141, 142);}
-.info .school { position: absolute; max-width: 100%; top: 208px; left: 0px; background-color: rgb(75, 192, 15); color: rgb(255, 255, 255); padding: 0px 10px; height: 32px; line-height: 32px; font-size: 16px; }
-.info .school span {  }
+.info .name { margin-bottom: 6px; width: 100%; height: 1.6em; line-height: 1.6em; font-size: 15px; }
+.name a { color: #000080; text-decoration: none; }
+.name a:hover { color: #000080; }
+
+.info .department { text-align: left; width: 70%; float: left; font-size: 1em; color: #000080;}
+.info .place { text-align: right; width: 70%; float: right; font-size: 1em; color: #000080;}
+
 .school0 { position: absolute; max-width: 100%; top: 208px; left: 0px; background-color: #FFB300; color: rgb(255, 255, 255); padding: 0px 10px; height: 32px; line-height: 32px; font-size: 16px; }
 
 @media screen and (min-width: 1280px) {
@@ -208,7 +206,7 @@ div.center { position: relative; }
 .recom-list { margin-top: 5px; }
 .recom-list > li { float: left; width: 33.3%; margin-top: 10px; }
 .recom-list > li > a { display: block; color: rgb(133, 141, 142); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 150%; }
-.recom-list > li > a:hover { color: rgb(75, 192, 165); }
+.recom-list > li > a:hover { color: #000080; }
 .mt20 { margin-top: 20px; }
 .notice-cont-title::before { content: ""; display: inline-block; width: 34px; height: 0px; border-top: 1px solid rgb(204, 204, 204); margin: 0px 15px 3px 0px; }
 .notice-cont-title::after { content: ""; display: inline-block; width: 34px; height: 0px; border-top: 1px solid rgb(204, 204, 204); margin: 0px 0px 3px 15px; }

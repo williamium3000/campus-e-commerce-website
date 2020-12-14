@@ -33,14 +33,12 @@
                     <a href="../goods/detail?id=${goods.id}" class="img" target="_top">
                     	<img src="/photo/view?filename=${goods.photo}" alt="${goods.name}"></a>
                     <div class="info">
-                        <div class="price">${goods.sellPrice}</div>
                         <div class="name">
                             <a href="../goods/detail?id=${goods.id}" target="_top">${goods.name}</a>
+                        
                         </div>
-                        <div class="department"><span>${goods.student.academy}</span></div>
-                        <div class="place"><span>${goods.student.school}</span></div>
+                        <div class="department">${goods.student.academy}</div>
                         <#if goods.recommend == 1>
-                        <div class="school"><span>推荐</span></div>
                         </#if>
                      </div>
                 </li>

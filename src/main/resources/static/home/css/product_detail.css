@@ -24,9 +24,9 @@ header { width: 100%; min-width: 960px; height: 120px; position: fixed; left: 0p
 .s-main { font-size: 3em; font-weight: 400; color: rgb(75, 191, 165); }
 .s-submain { font-size: 1.33em; color: rgb(255, 178, 0); text-align: center; }
 .search-box-wr { width: 50%; margin: 0px auto; padding-top: 5px; }
-.search-box { width: 100%; height: 50px; border: 1px solid rgb(68, 193, 165); border-radius: 25px; font-size: 1.33em; color: rgb(75, 192, 165); overflow: hidden; }
-.search-submit { float: right; width: 24.13%; height: 100%; background-color: rgb(100, 203, 179); font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; }
-.search-submit:hover { background: rgb(62, 177, 150) none repeat scroll 0% 0%; }
+.search-box { width: 100%; height: 50px; border: 1px solid rgb(68, 193, 165); border-radius: 25px; font-size: 1.33em; color: #00008075192165; overflow: hidden; }
+.search-submit { float: right; width: 24.13%; height: 100%; background-color: #000080100203179; font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; }
+.search-submit:hover { background: #00008062177150none repeat scroll 0% 0%; }
 .input-wr { margin-right: 24.13%; }
 .search-icon { height: 24px; margin: 13px 0px 0px 18px; float: left; }
 .search-input { height: 30px; margin-left: 45px; padding: 10px; }
@@ -36,8 +36,8 @@ header { width: 100%; min-width: 960px; height: 120px; position: fixed; left: 0p
 .hots:hover { color: rgb(237, 78, 81); }
 .log-reg { position: absolute; right: 0px; top: 40px; }
 .button { float: left; width: 72px; height: 16px; margin: 0px 1px 0px 0px; padding: 8px 0px; border: 1px solid transparent; border-radius: 25px; transition: all 0.2s ease-in 0s; font-size: 1.33em; color: rgb(75, 191, 165); text-align: center; line-height: 16px; vertical-align: middle; cursor: pointer; }
-.button:hover { border-color: rgb(75, 191, 165); }
-footer { padding: 0px 0px 20px; background: rgb(247, 250, 249) url('../imgs/footer-bg.png') no-repeat scroll center bottom; }
+.button:hover { border-color:#000080; }
+footer { padding: 0px 0px 20px; background:#000080  no-repeat scroll center bottom; }
 .footer-tri { display: block; width: 100%; margin-bottom: 25px; }
 .links-wr li::before { content: "/"; font-size: 1.33em; color: rgb(102, 102, 102); line-height: 16px; position: absolute; left: 0px; bottom: -1px; }
 .links-wr li.first::before { content: ""; }
@@ -86,7 +86,7 @@ div.center { position: relative; }
 
 .main { width: 640px; padding: 20px 0px 45px; }
 .items::after { content: ""; display: inline-block; width: 100%; }
-.info .price::before { content: "￥"; }
+.info .price::before { content: "锟�"; }
 @media screen and (min-width: 1280px) {
 	.main { width: 840px; }
 }
@@ -108,7 +108,7 @@ div.center { position: relative; }
 .show { display: block !important; }
 .ershou-details { width: 100%; }
 .ershou-photos-wr { position: relative; width: 540px; height: 540px; float: left; text-align: center; overflow: hidden; }
-.ershou-favorite { display: block; width: 60px; height: 60px; position: absolute; top: 20px; right: 20px; z-index: 10; border-radius: 100%; background: rgba(255, 255, 255, 0.86) url('../imgs/heart.png') no-repeat scroll center 10px; color: rgb(255, 178, 0); font-size: 1.17em; text-align: center; line-height: 85px; vertical-align: middle; text-decoration: none; }
+.ershou-favorite { display: block; width: 60px; height: 60px; position: absolute; top: 20px; right: 20px; z-index: 10; border-radius: 100%; background: rgba(255, 255, 255, 0.86) url('../imgs/heart.png') no-repeat scroll center 10px; color: #000080; font-size: 1.17em; text-align: center; line-height: 85px; vertical-align: middle; text-decoration: none; }
 .ershou-favorite:hover { background-color: rgba(248, 252, 226, 0.86); }
 .bigger-photo-box { width: 100%; height: 100%; overflow: hidden; }
 a.bigger-photo { display: block; width: 100%; height: 100%; overflow: hidden; line-height: 560px; background-color: rgb(247, 247, 247); }
@@ -116,34 +116,34 @@ a.bigger-photo { display: block; width: 100%; height: 100%; overflow: hidden; li
 .ershou-photo-slide-layer { background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; bottom: 0px; z-index: 50; width: 100%; height: 80px; opacity: 0.5; }
 .ershou-photo-slide { position: absolute; bottom: 0px; z-index: 99; width: 100%; height: 80px; text-align: center; }
 .ershou-small-photos { display: inline-block; height: 80px; width: 70px; text-align: center; line-height: 80px; }
-.small { border: 1px solid rgb(252, 252, 252); height: 60px; width: 60px; cursor: pointer; vertical-align: middle; }
-.cur { border: 3px solid rgb(68, 193, 165); }
+.small { border: 1px solid #000080; height: 60px; width: 60px; cursor: pointer; vertical-align: middle; }
+.cur { border: 3px solid #000080; }
 .ershou-info { position: relative; margin-left: 540px; height: 540px; background-color: rgb(255, 255, 255); overflow: hidden; }
 .ershou-hd { padding: 25px 25px 30px; border-bottom: 1px dashed rgb(227, 238, 236); position: relative; }
 .bro-counts { font-size: 14px; color: rgb(153, 153, 153); position: absolute; background-color: rgb(255, 255, 255); display: inline-block; line-height: 120%; bottom: -7px; left: 160px; padding: 0px 5px; }
-.ershou-title { color: rgb(28, 130, 108); font-size: 30px; font-weight: 400; margin-bottom: 15px; word-break: break-all; padding-right: 33px; }
+.ershou-title { color: #000080; font-size: 30px; font-weight: 400; margin-bottom: 15px; word-break: break-all; padding-right: 33px; }
 
-.ershou-price { color: rgb(235, 80, 85); font-size: 2.33em; line-height: 1em; }
-.ershou-price::before { content: "￥"; font-size: 1em; color: inherit; vertical-align: middle; }
+.ershou-price { color: #000080; font-size: 2.33em; line-height: 1em; }
+.ershou-price::before { font-size: 1em; color: inherit; vertical-align: middle; }
 .ershou-price  .is-discount{ display: inline; font-size: 12px; color: rgb(102, 102, 102); vertical-align: middle; margin-left: 15px; }
 
-.buy-price { color: rgb(153,153,153); font-size: 1.2em; line-height: 1em; }
+.buy-price { color: #000080; font-size: 1.2em; line-height: 1em; }
 .buy-price  .is-discount{ display: inline; font-size: 12px; color: rgb(102, 102, 102); vertical-align: middle; margin-left: 15px; }
 
 
-#buy-button{width: 140px;height: 52px; text-align:center;line-height:48px;font-size:24px;font-family: Arial, "宋体";background-position: center center; background-color: rgb(223,48,51);margin-left:150px;}
+#buy-button{width: 140px;height: 52px; text-align:center;line-height:48px;font-size:24px;font-family: Arial;background-position: center center; background-color: rgb(223,48,51);margin-left:150px;}
  #buy-button:hover{} 
 
 .ershou-detail { padding: 14px 25px 20px; font-size: 1.16em; list-style: outside none none; }
 .ershou-detail li { margin-top: 16px; }
 .ershou-detail li .name { float: left; width: 80px; height: 30px; text-align: right; }
-.name span { display: inline-block; min-width: 30px; padding: 7px 12px; background-color: rgb(75, 192, 165); color: rgb(255, 255, 255); text-align: center; white-space: nowrap; }
+.name span { display: inline-block; min-width: 30px; padding: 7px 12px; background-color: #000080; color: rgb(255, 255, 255); text-align: center; white-space: nowrap; }
 .ershou-detail li .value { line-height: 30px; margin-left: 100px; color: rgb(102, 102, 102); }
-.ershou-detail .value-name { color: rgb(75, 192, 165); font-size: 14px; padding-right: 22px; background-image: url('../imgs/ico_seller.png'); background-repeat: no-repeat; background-position: right 0px; }
-.ershou-detail .value-name:hover { color: rgb(255, 179, 0); background-position: right -29px; }
+.ershou-detail .value-name { color: #000080; font-size: 14px; padding-right: 22px; background-image: url('../imgs/ico_seller.png'); background-repeat: no-repeat; background-position: right 0px; }
+.ershou-detail .value-name:hover { color: #000080; background-position: right -29px; }
 .complain { width: 100%; position: absolute; left: 0px; bottom: 15px; text-align: center; }
 .complain a { color: rgb(153, 153, 153); font-size: 1em; text-decoration: none; }
-.complain a:hover { color: rgb(100, 203, 179); }
+.complain a:hover { color: #000080; }
 .ershou-desc { margin-top: 20px; padding: 30px 90px; background-color: rgb(255, 255, 255); background-image: url('../imgs/info.png'); background-position: 12px 12px; background-repeat: no-repeat; text-align: left; }
 .avatar { width: 40px; height: 40px; border-radius: 100%; float: left; overflow: hidden; }
 .desc { min-height: 50px; color: rgb(102, 102, 102); font-size: 1.17em; line-height: 23px; }
@@ -151,23 +151,23 @@ a.bigger-photo { display: block; width: 100%; height: 100%; overflow: hidden; li
 .comments-title { position: absolute; left: -5px; top: 5px; width: 88px; height: 34px; background: transparent url('../imgs/comment.png') no-repeat scroll 0% 0%; color: rgb(255, 255, 255); font-size: 1.5em; text-indent: -9999em; }
 .comments-wr { width: 100%; margin-top: 5px; }
 div.comment::after { content: ""; width: 0px; height: 0px; display: block; visibility: hidden; clear: both; }
-div.comment .avatar, .post-comment .avatar { position: relative; width: 40px; height: 40px; border: 1px solid rgb(75, 192, 165); background-color: rgb(255, 255, 255); }
+div.comment .avatar, .post-comment .avatar { position: relative; width: 40px; height: 40px; border: 1px solid #000080; background-color: rgb(255, 255, 255); }
 .post-comment { position: relative; }
-.comment-cover { position: absolute; z-index: 445; top: 2px; right: 46px; background-color: rgb(75, 192, 165); width: 56px; height: 60px; display: none; }
+.comment-cover { position: absolute; z-index: 445; top: 2px; right: 46px; background-color: #000080; width: 56px; height: 60px; display: none; }
 .comment-cover .loader { display: inline-block; position: relative; width: 30px; height: 30px; vertical-align: middle; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 .comment-cover .loader-quart { border-radius: 50%; border: 4px solid rgba(255, 255, 255, 0.4); }
 .loader-quart::after { content: ""; position: absolute; top: -4px; right: -4px; bottom: -4px; left: -4px; border-radius: 50%; border-width: 4px; border-style: solid; border-color: rgb(204, 204, 204) rgb(245, 245, 245) rgb(245, 245, 245); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; animation: 1s linear 0s normal none infinite running spin; }
 div.comment .avatar::before, .post-comment .avatar::before { content: ""; display: block; position: absolute; left: 0px; top: 0px; width: 44px; height: 44px; border-radius: 100px; border: 2px solid rgb(255, 255, 255); }
-.rpy-to::before { content: "回复"; display: inline-block; margin: 0px 8px; color: rgb(153, 153, 153); font-size: 1em; }
-.commenting, .commenting-unlogin { position: relative; border: 1px solid rgb(75, 192, 165); margin-right: 45px; margin-left: 60px; }
+.rpy-to::before { content: "鍥炲"; display: inline-block; margin: 0px 8px; color: rgb(153, 153, 153); font-size: 1em; }
+.commenting, .commenting-unlogin { position: relative; border: 1px solid #000080; margin-right: 45px; margin-left: 60px; }
 .commenting::before, .commenting-unlogin::before { content: ""; display: block; position: absolute; left: -9px; top: -1px; width: 9px; height: 12px; background-image: url('../imgs/commenting-tri.png'); background-repeat: no-repeat; background-color: rgb(254, 254, 254); }
 .commenting-unlogin::before { background-image: url('../imgs/commenting-unlogin-tri.png'); }
-.commenting-unlogin, .tips { display: block; height: 60px; line-height: 60px; font-size: 1em; text-align: center; color: rgb(0, 172, 144); background-color: rgb(246, 249, 249); }
+.commenting-unlogin, .tips { display: block; height: 60px; line-height: 60px; font-size: 1em; text-align: center; color: #000080; background-color: rgb(246, 249, 249); }
 .comment-input-wr-wr { margin-right: 80px; }
 .comment-input-wr { width: 100%; height: 60px; float: left; }
 .sub-comment, .comment-login { width: 56px; height: 60px; background: transparent url('../imgs/comment-button.png') no-repeat scroll 0% 0%; color: rgb(255, 255, 255); font-size: 1.33em; text-indent: -9999em; float: right; cursor: pointer; }
 .comment-login { background: transparent url('../imgs/comment-login.png') no-repeat scroll 0% 0%; }
-.comments-wr { position: relative; top: -20px; margin-left: 21px; border-left: 1px solid rgb(75, 192, 165); }
+.comments-wr { position: relative; top: -20px; margin-left: 21px; border-left: 1px solid #000080; }
 .comment-wr { position: relative; left: -26px; top: 20px; }
 div.comment .avatar, .post-comment .avatar { padding: 3px; }
 #user_ph { float: left; margin-right: 20px; width: 52px; height: 52px; vertical-align: middle; border-radius: 100%; }
@@ -191,8 +191,8 @@ div.comment .avatar, .post-comment .avatar { padding: 3px; }
 .ad-box { margin-left: -20px; position: relative; }
 .comment-right { float: right; }
 .want-commenting::before { background-color: rgb(254, 254, 254); }
-.user-login-tip { display: none; font-size: 12px; color: rgb(75, 191, 165); margin-left: 8px; cursor: pointer; }
-.user-login-tip:hover { color: rgb(255, 179, 0); }
+.user-login-tip { display: none; font-size: 12px; color: #000080; margin-left: 8px; cursor: pointer; }
+.user-login-tip:hover { color: #000080; }
 /* ::::: http://hust.2shoujie.com/resource/css/fancybox-1.3.1.css?v=201506100001 ::::: */
 
 #fancybox-loading { position: fixed; top: 50%; left: 50%; height: 40px; width: 40px; margin-top: -20px; margin-left: -20px; cursor: pointer; overflow: hidden; z-index: 1104; display: none; }
