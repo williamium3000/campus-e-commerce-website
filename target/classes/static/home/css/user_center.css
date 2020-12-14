@@ -11,7 +11,7 @@ a { text-decoration: none; transition: all 0.2s ease-in-out 0s; }
 body { position: relative; min-width: 960px; font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","SimSun",Arial,sans-serif; font-size: 12px; color: rgb(18, 18, 18); height: 100%; }
 .clearfix::after { content: ""; width: 0px; height: 0px; display: block; visibility: hidden; clear: both; }
 .clearfix {  }
-.container { min-width: 960px; padding-top: 120px; background-color: rgb(227, 238, 236); }
+.container { min-width: 960px; padding-top: 120px; background-color: #c4c1ec; }
 .ease2 { transition: all 0.2s linear 0s; }
 a { transition: color 0.2s ease 0s; }
 header { width: 100%; min-width: 960px; height: 120px; position: fixed; left: 0px; top: 0px; z-index: 99; overflow: visible; background-color: rgb(255, 255, 255); box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); }
@@ -24,9 +24,9 @@ header { width: 100%; min-width: 960px; height: 120px; position: fixed; left: 0p
 .s-main { font-size: 3em; font-weight: 400; color: rgb(75, 191, 165); }
 .s-submain { font-size: 1.33em; color: rgb(255, 178, 0); text-align: center; }
 .search-box-wr { width: 50%; margin: 0px auto; padding-top: 5px; }
-.search-box { width: 100%; height: 50px; border: 1px solid rgb(68, 193, 165); border-radius: 25px; font-size: 1.33em; color: rgb(75, 192, 165); overflow: hidden; }
-.search-submit { float: right; width: 24.13%; height: 100%; background-color: rgb(100, 203, 179); font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; }
-.search-submit:hover { background: rgb(62, 177, 150) none repeat scroll 0% 0%; }
+.search-box { width: 100%; height: 50px; border: 1px solid #000080; border-radius: 25px; font-size: 1.33em; color: rgb(75, 192, 165); overflow: hidden; }
+.search-submit { float: right; width: 24.13%; height: 100%; background-color: #000080; font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; }
+.search-submit:hover { background: #000080 none repeat scroll 0% 0%; }
 .input-wr { margin-right: 24.13%; }
 .search-icon { height: 24px; margin: 13px 0px 0px 18px; float: left; }
 .search-input { height: 30px; margin-left: 45px; padding: 10px; }
@@ -35,7 +35,7 @@ header { width: 100%; min-width: 960px; height: 120px; position: fixed; left: 0p
 .hots { margin: 0px 8px; color: rgb(133, 142, 143); text-decoration: none; }
 .hots:hover { color: rgb(237, 78, 81); }
 .log-reg { position: absolute; right: 0px; top: 40px; }
-footer { padding: 0px 0px 20px; background: rgb(247, 250, 249) url('../imgs/footer-bg.png') no-repeat scroll center bottom; }
+footer { padding: 0px 0px 20px; background:#c4c1ec ; }
 .footer-tri { display: block; width: 100%; margin-bottom: 25px; }
 .links-wr li::before { content: "/"; font-size: 1.33em; color: rgb(102, 102, 102); line-height: 16px; position: absolute; left: 0px; bottom: -1px; }
 .links-wr li.first::before { content: ""; }
@@ -110,7 +110,7 @@ p.site-name { width: 110px; height: 21px; margin: 17px auto 0px; background: tra
 .reg-form-container { background-color: rgb(68, 193, 165); }
 .login-form-container .input-class, .reg-form-container .input-class { display: block; margin: 20px auto 0px; width: 268px; height: 20px; padding: 10px 0px; color: rgb(75, 192, 165); font-size: 14px; line-height: 20px; text-align: center; background-color: rgb(255, 255, 255); border-radius: 20px; }
 .login-p { display: block; text-align: center; margin-top: 20px; color: rgb(255, 255, 255); }
-.login-input { width: 268px; height: 35px; color: rgb(75, 192, 165); font-size: 14px; text-align: center; background-color: rgb(255, 255, 255); border-radius: 20px; }
+.login-input { width: 268px; height: 35px; color: #c4c1ec; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255); border-radius: 20px; }
 p.ex { width: 270px; margin: 20px auto 0px; }
 .rem-wr { float: left; line-height: 1em; }
 #rem { vertical-align: middle; }
@@ -157,7 +157,7 @@ div.center { position: relative; }
 .wrap-head-img .head-img-area { padding: 16px; height: 418px; }
 .head-img-area .wrap-img { background-color: rgb(242, 242, 245); height: 100%; text-align: center; overflow: hidden; }
 .btn-upload-img { display: inline-block; font-size: 12px; color: rgb(51, 51, 51); padding: 0px 8px; height: 24px; line-height: 24px; margin-top: 200px; background-color: rgb(255, 255, 255); border: 1px solid rgb(217, 217, 217); border-radius: 2px; }
-.btn-upload-img > i { display: inline-block; color: rgb(75, 192, 165); font-size: 18px; margin-right: 5px; font-weight: bold; vertical-align: -2px; }
+.btn-upload-img > i { display: inline-block; color: #c4c1ec; font-size: 18px; margin-right: 5px; font-weight: bold; vertical-align: -2px; }
 .wrap-img .img-limit { color: rgb(128, 128, 128); font-size: 12px; margin-top: 8px; text-align: center; }
 .head-img-footer { background-color: rgb(255, 255, 255); display: inline-block; width: 100%; text-align: center; height: 50px; vertical-align: middle; line-height: 50px; }
 .head-img-footer > a { display: inline-block; width: 72px; height: 32px; line-height: 32px; font-size: 14px; margin-right: 5px; text-align: center; vertical-align: middle; border-radius: 2px; }

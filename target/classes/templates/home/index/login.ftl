@@ -66,7 +66,7 @@
         <ul class="reg_form" id="reg-ul">
         
                  <li>
-                 <label for="qq" class="input-tips2">姓名：</label>
+                 <label for="name" class="input-tips2">姓名：</label>
                     <div class="inputOuter2">
                        
                         <input type="text" id="name" name="name" maxlength="10" class="inputstyle2"/>
@@ -136,7 +136,7 @@
                 
                 <li>
                     <div class="inputArea">
-                        <input type="button" id="reg_button"  style="margin-top:10px;margin-left:85px;" class="button_blue" value="注册成为会员"/> 
+                        <input type="button" id="reg_button"  style="margin-top:10px;margin-left:85px;" class="button_blue" href="javascript::" value="注册成为会员"/>
                     </div>
                     
                 </li><div class="cl"></div>

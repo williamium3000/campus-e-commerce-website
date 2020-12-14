@@ -67,7 +67,9 @@ public class Student extends BaseEntity{
 	@ValidateEntity(required=false)
 	@Column(name="dormitory")
 	private String dormitory;
-
+	@ValidateEntity(required=false)
+	@Column(name="sex")
+	private String sex;
 	@Override
 	public String toString() {
 		return "Student{" +
@@ -177,17 +179,15 @@ public class Student extends BaseEntity{
 		this.dormitory = dormitory;
 	}
 
-	public boolean isSex() {
+	public String isSex() {
 		return sex;
 	}
 
-	public void setSex(boolean sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 
-	@ValidateEntity(required=false)
-	@Column(name="sex")
-	private boolean sex;
+
 
 	
 

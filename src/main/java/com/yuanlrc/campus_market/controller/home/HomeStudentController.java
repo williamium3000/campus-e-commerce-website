@@ -77,7 +77,6 @@ public class HomeStudentController {
 		loginedStudent.setMajor(student.getMajor());
 		loginedStudent.setMobile(student.getMobile());
 		loginedStudent.setNickname(student.getNickname());
-		loginedStudent.setQq(student.getQq());
 		loginedStudent.setSchool(student.getSchool());
 		if(studentService.save(loginedStudent) == null){
 			return Result.error(CodeMsg.HOME_STUDENT_EDITINFO_ERROR);
