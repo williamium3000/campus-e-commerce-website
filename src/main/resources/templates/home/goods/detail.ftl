@@ -76,7 +76,7 @@
                         </li>
                     </ul>
                     <div id="buy-button" >
-            			<a style="color: white;cursor:pointer;" > 联系卖家</a>
+            			<a style="color: white;cursor:pointer;" >购买</a>
        	 			</div>
                     <div class="complain">
                     	<a href="javascript:void(0);" onclick="report(${goods.id});">•&nbsp;&nbsp;&nbsp;&nbsp;举报&nbsp;&nbsp;&nbsp;&nbsp;•</a>
