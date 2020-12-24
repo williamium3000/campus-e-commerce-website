@@ -11,9 +11,8 @@
   <#include "../common/top_header.ftl"/>
    <div class="container">
             <div class="main center">
-                <img class="release-icon-main" src="/home/imgs/release-icon.png" alt="">
-                <div class="wave-fluid"></div>
-                <div class="release-title">发布商品出售</div>
+                <img src="/home/imgs/release-icon.png" alt="">
+                
                 <form action="publish" id="publish-form" method="post">
                 <div class="form-wr">
                     <div class="form-must-wr">
@@ -121,7 +120,6 @@
             </div>
         </div>
  	<#include "../common/right_menu.ftl"/>
-	<#include "../common/bottom_footer.ftl"/> 
 <script  src="/home/js/jquery-3.1.1.min.js"></script>
 <script src="/home/js/common.js"></script>
 <script src="/home/js/add.js"></script>

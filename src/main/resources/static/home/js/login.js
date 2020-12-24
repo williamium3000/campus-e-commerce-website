@@ -207,18 +207,7 @@ $(document).ready(function() {
 		}
 
 		
-		if (!sqq.test($('#qq').val()) || $('#qq').val().length < 5 || $('#qq').val().length > 12) {
-			$('#qq').focus().css({
-				border: "1px solid red",
-				boxShadow: "0 0 2px red"
-			});
-			$('#userCue').html("<font color='red'><b>×QQ号码格式不正确</b></font>");return false;
-		} else {
-			$('#qq').css({
-				border: "1px solid #D7D7D7",
-				boxShadow: "none"
-			});
-		}
+	
 
 		$.ajax({
 			type: "POST" ,

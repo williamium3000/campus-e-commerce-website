@@ -34,8 +34,8 @@
                     	<img src="/photo/view?filename=${goods.photo}" alt="${goods.name}"></a>
                     <div class="info">
                         <div class="name">
+                      
                             <a href="../goods/detail?id=${goods.id}" target="_top">${goods.name}</a>
-                        
                         </div>
                         <div class="department">${goods.student.academy}</div>
                         <#if goods.recommend == 1>

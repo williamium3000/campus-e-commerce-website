@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<title>${siteName!""}|操作日志管理-${title!""}</title>
+<title>SCUT二手市场|操作日志管理-${title!""}</title>
 <#include "../common/header.ftl"/>
 <style>
 td{

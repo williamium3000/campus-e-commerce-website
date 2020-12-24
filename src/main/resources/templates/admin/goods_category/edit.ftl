@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<title>${siteName!""}|分类管理-修改物品分类</title>
+<title>SCUT二手市场|分类管理-修改物品分类</title>
 <#include "../common/header.ftl"/>
 
 </head>

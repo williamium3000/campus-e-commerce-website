@@ -9,7 +9,6 @@
 </head>
 <body>
   <#include "../common/top_header.ftl"/>
-  <#include "../common/left_menu.ftl"/>
    <div class="container">
         <div class="main center clearfix">
             <div class="ershou-details">
@@ -28,7 +27,10 @@
                         <p class="ershou-title">${goods.name}</p>
                         <div class=" discount">
                         	<span class="buy-price">原价：${goods.buyPrice}</span>
-                        	<span class="ershou-price">二手街价：${goods.sellPrice}</span>
+                        	<br>
+                        	<br>
+                        	<br>
+                        	<span class="ershou-price">现价：${goods.sellPrice}</span>
                         </div>
                         <p class="bro-counts">浏览了<span>${goods.viewNumber}</span>次</p>
                     </div>
@@ -158,8 +160,7 @@
             <!--物品评论结束-->
         </div>
     </div>
- 	<#include "../common/right_menu.ftl"/>
-	<#include "../common/bottom_footer.ftl"/> 
+ 	<#include "../common/right_menu.ftl"/> 
 <script  src="/home/js/jquery-3.1.1.min.js"></script>
 <script src="/home/js/common.js"></script>
 <script src="/home/js/add.js"></script>

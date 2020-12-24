@@ -9,7 +9,6 @@
 </head>
 <body>
   <#include "../common/top_header.ftl"/>
-	<#include "../common/left_menu.ftl"/> 
     ﻿<div class="container">
     <div class="main center">
     <!-- 头像设置开始 -->
@@ -48,7 +47,7 @@
             <li>正出售商品：<span id = "upGoodsTotal">4545</span></li>
             <li>已下架商品：<span id = "downGoodsTotal">4545</span></li>
             <li>待求购商品：<span id = "userpoint">${wantedGoodsList?size}</span></li>
-            <li>已举报商品：<span id = "userpoint">${reportGoodsList?size}</span></li>
+            <li>已购得商品：<span id = "userpoint">${reportGoodsList?size}</span></li>
         </ul>
     </div>
     <div id="user_photo">
@@ -112,47 +111,35 @@
             <div id="base_info">
                 <h2>基本信息 <span id="edit_info">编辑</span><span id="save_info">保存</span></h2>
                 <ul class="infos">
-                    <li>昵称</li>
+                    <li>姓名</li>
                     <li class="right_info">
                         <span class="baseinfo" id="nickname_span">${ylrc_student.nickname!""}</span>
                         <input class="baseinfo" value="${ylrc_student.nickname!""}" id="nickname" type="text">
                     </li> 
                 </ul>
                 <ul class="infos">
-                    <li>手机</li>
+                    <li>性别</li>
                     <li class="right_info">
-                        <span class="baseinfo" id="phone_span">${ylrc_student.mobile!""}</span>
-                        <input class="baseinfo" value="${ylrc_student.mobile!""}" id="mobile" type="text">
+                        <span class="baseinfo" id="sex_span">${ylrc_student.sex!""}</span>
+                        <input class="baseinfo" value="${ylrc_student.sex!""}" id="sex" type="text">
                     </li>
                 </ul>
-                <ul class="infos">
-                    <li>QQ</li>
-                    <li class="right_info">
-                        <span class="baseinfo" id="qq_span">${ylrc_student.qq!""}</span>
-                        <input class="baseinfo" value="${ylrc_student.qq!""}" id="qq" type="text">
-                    </li>
-                </ul>
+                
                 <ul class="infos">
                     <li>学院</li>
                     <li class="right_info">
-                        <span class="baseinfo" id="college_span">${ylrc_student.academy!""}</span>
-                        <input class="baseinfo" value="${ylrc_student.academy!""}" id="academy" type="text">
+                        <span class="baseinfo" id="college_span">${ylrc_student.college!""}</span>
+                        <input class="baseinfo" value="${ylrc_student.college!""}" id="college" type="text">
                     </li>
                 </ul>
                 <ul class="infos">
-                    <li>年级</li>
+                    <li>专业</li>
                     <li class="right_info">
-                        <span class="baseinfo" id="grade_span">${ylrc_student.grade!""}</span>
-                        <input class="baseinfo" value="${ylrc_student.grade!""}" id="grade" type="text">
+                        <span class="baseinfo" id="grade_span">${ylrc_student.major!""}</span>
+                        <input class="baseinfo" value="${ylrc_student.major!""}" id="major" type="text">
                     </li>
                 </ul>
-                <ul class="infos">
-                    <li>学校</li>
-                    <li class="right_info">
-                        <span class="baseinfo" id="area_span">${ylrc_student.school!""}</span>
-                        <input class="baseinfo" value="${ylrc_student.school!""}" id="school" type="text">
-                    </li>
-                </ul>
+                
             </div>
         </div>
         <ul id="middle_nav" class="clearfix">
@@ -177,14 +164,7 @@
 	                        	<font style="color:#4BC00F;">已售出</font>
 	                        	</#if>
 	                        </span>|
-	                        <span id="prostate">
-	                        	是否推荐：
-	                        	<#if goods.recommend ==1>
-	                        	<font style="color:rgb(75, 192, 165);">是</font>
-	                        	<#else>
-	                        	<font style="color:red;">否</font>
-	                        	</#if>
-	                        </span>
+	                       
 	                        &nbsp;&nbsp;<span id="prostate">上架日期：${goods.updateTime}</span>
 	                            <#if goods.status == 1>
 	                            <span class="enshrine_it" onclick="sellout(${goods.id});">确认售出</span>
@@ -197,9 +177,7 @@
 	                            <span class="enshrine_it make_edition" onclick="onshelf(${goods.id});" style="margin-right:30px;">上架</span>
 	                            </#if>
 	                            <#if goods.flag == 0>
-	                            <span class="enshrine_it make_edition" onclick="refresh(${goods.id},1);">擦亮</span>
-	                            <#else>
-	                            <span class="enshrine_it make_edition" onclick="refresh(${goods.id},0);">取消擦亮</span>
+	                           
 	                            </#if>
 	                            <a href="edit_goods?id=${goods.id}" target="_top">
 	                                <span class="enshrine_it  make_edition">编辑</span>
@@ -250,7 +228,7 @@
               </div>
         </div>
         <ul id="middle_nav" class="clearfix">
-   		<li class="on"><a href="">我举报的商品</a></li>
+   		<li class="on"><a href="">我买到的商品</a></li>
 		</ul>
         <div id="my_products">
               <div id="onsale_pro">
@@ -261,8 +239,6 @@
 	                        <h2><a href="../goods/detail?id=${reportGoods.goods.id}" title="${reportGoods.goods.name}">${reportGoods.goods.name}</a></h2>
 	                        <p style="overflow:hidden;">${reportGoods.goods.content}</p>
 	                        <div class="enshr_state">
-	                        &nbsp;&nbsp;<span id="prostate">举报日期：${reportGoods.createTime}</span>
-	                        &nbsp;&nbsp;<span id="prostate">举报原因：${reportGoods.content}</span>
                             <a href="javascript:void(0)" onClick="delReport(${reportGoods.id})" target="_top">
 	                            <span class="enshrine_it  make_edition" style="margin-right:30px;">删除</span>
 	                        </a>
@@ -276,10 +252,10 @@
                 </#if>
               </div>
         </div>
+        
+        
     </div>
 </div>
- 	<#include "../common/right_menu.ftl"/>
-	<#include "../common/bottom_footer.ftl"/> 
 <script  src="/home/js/jquery-3.1.1.min.js"></script>
 <script src="/home/js/common.js"></script>
 <script src="/home/js/user_center.js"></script>

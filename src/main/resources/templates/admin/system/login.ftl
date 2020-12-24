@@ -49,7 +49,7 @@
   <div class="lyear-login">
     <div class="login-center">
       <div class="login-header text-center">
-        <a href=""> <img alt="light year admin" src="/admin/images/logo-sidebar.png"></a>
+        <h3>SCUT二手市场后台管理系统</h3>
       </div>
       <form id="login-form" method="post">
         <div class="form-group has-feedback feedback-left">
@@ -70,13 +70,11 @@
           </div>
         </div>
         <div class="form-group">
-          <button class="btn btn-block btn-primary" type="button" id="submit-btn">立即登录</button>
+          <button class="btn btn-block btn-primary" type="button" id="submit-btn">登录</button>
         </div>
       </form>
       <hr>
-      <footer class="col-sm-12 text-center">
-        <p class="m-b-0">Copyright © 2020 <a href="${siteUrl!""}">【猿来入此】</a>. All right reserved</p>
-      </footer>
+      
     </div>
   </div>
 </div>

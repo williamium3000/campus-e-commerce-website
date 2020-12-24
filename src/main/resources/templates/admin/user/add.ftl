@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<title>${siteName!""}|用户管理-添加用户</title>
+<title>SCUT二手市场|用户管理-添加用户</title>
 <#include "../common/header.ftl"/>
 
 </head>
