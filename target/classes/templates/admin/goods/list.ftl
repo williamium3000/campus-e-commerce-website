@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, goodsCategory-scalable=no" />
-<title>${siteName!""}|物品管理-${title!""}</title>
+<title>SCUT二手市场|物品管理-${title!""}</title>
 <#include "../common/header.ftl"/>
 <style>
 td{
@@ -78,8 +78,6 @@ td{
                         <th>售价</th>
                         <th>浏览量</th>
                         <th>状态</th>
-                        <th>是否擦亮</th>
-                        <th>是否推荐</th>
                         <th>添加时间</th>
                       </tr>
                     </thead>
@@ -118,16 +116,7 @@ td{
                         	<#else>已出售
                         	</#if>
                         </td>
-                        <td style="vertical-align:middle;">
-                        	<#if goods.flag == 1><font class="text-success">是</font>
-                        	<#else>否
-                        	</#if>
-                        </td>
-                        <td style="vertical-align:middle;">
-                        	<#if goods.recommend == 1><font class="text-success">是</font>
-                        	<#else>否
-                        	</#if>
-                        </td>
+                        
                         <td style="vertical-align:middle;" style="vertical-align:middle;"><font class="text-success">${goods.createTime}</font></td>
                       </tr>
                     </#list>

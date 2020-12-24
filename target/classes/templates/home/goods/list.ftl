@@ -69,7 +69,6 @@
 </div>
 <div class="return-to-top"><a href="#"></a></div><!--返回顶部-->
  	<#include "../common/right_menu.ftl"/>
-	<#include "../common/bottom_footer.ftl"/> 
 <script  src="/home/js/jquery-3.1.1.min.js"></script>
 <script src="/home/js/common.js"></script>
 <script src="/home/js/index.js"></script>

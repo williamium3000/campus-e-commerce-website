@@ -21,21 +21,21 @@ header { width: 100%; min-width: 960px; height: 120px; position: fixed; left: 0p
 .slogan { display: block; position: absolute; left: 0px; width: 179px; height: 61px; text-decoration: none; }
 .s-main, .s-submain { text-indent: -9999em; }
 .slogan img { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; }
-.s-main { font-size: 3em; font-weight: 400; color: rgb(75, 191, 165); }
+.s-main { font-size: 3em; font-weight: 400; color: #000080; }
 .s-submain { font-size: 1.33em; color: rgb(255, 178, 0); text-align: center; }
 .search-box-wr { width: 50%; margin: 0px auto; padding-top: 5px; }
-.search-box { width: 100%; height: 50px; border: 1px solid rgb(68, 193, 165); border-radius: 25px; font-size: 1.33em; color: rgb(75, 192, 165); overflow: hidden; }
-.search-submit { float: right; width: 24.13%; height: 100%; background-color: rgb(100, 203, 179); font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; }
-.search-submit:hover { background: rgb(62, 177, 150) none repeat scroll 0% 0%; }
+.search-box { width: 100%; height: 50px; border: 1px solid rgb(0, 0, 128); border-radius: 25px; font-size: 1.33em; color: rgb(75, 192, 165); overflow: hidden; }
+.search-submit { float: right; width: 24.13%; height: 100%; background-color: #000080; font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; }
+.search-submit:hover { background: rgb(0, 0, 128) none repeat scroll 0% 0%; }
 .input-wr { margin-right: 24.13%; }
 .search-icon { height: 24px; margin: 13px 0px 0px 18px; float: left; }
 .search-input { height: 30px; margin-left: 45px; padding: 10px; }
-.search-input input { width: 100%; height: 100%; font-size: 16px; color: rgb(75, 191, 165); line-height: 2em; vertical-align: middle; outline: medium none; }
-.search-hots { font-size: 12px; width: 97%; margin-top: 12px; color: rgb(75, 191, 165); overflow: hidden; opacity: 1; }
+.search-input input { width: 100%; height: 100%; font-size: 16px; color:#000080; line-height: 2em; vertical-align: middle; outline: medium none; }
+.search-hots { font-size: 12px; width: 97%; margin-top: 12px; color: #000080; overflow: hidden; opacity: 1; }
 .hots { margin: 0px 8px; color: rgb(133, 142, 143); text-decoration: none; }
 .hots:hover { color: rgb(237, 78, 81); }
 .log-reg { position: absolute; right: 0px; top: 40px; }
-footer { padding: 0px 0px 20px; background: rgb(247, 250, 249) url('../imgs/footer-bg.png') no-repeat scroll center bottom; }
+footer { padding: 0px 0px 20px; background: rgb(247, 250, 249)  no-repeat scroll center bottom; }
 .footer-tri { display: block; width: 100%; margin-bottom: 25px; }
 .links-wr li::before { content: "/"; font-size: 1.33em; color: rgb(102, 102, 102); line-height: 16px; position: absolute; left: 0px; bottom: -1px; }
 .links-wr li.first::before { content: ""; }
@@ -46,7 +46,7 @@ footer a:hover { color: rgb(237, 78, 81); }
 .site-msg { margin: 10px 0px 0px; color: rgb(133, 142, 143); text-align: center; }
 nav { position: absolute; z-index: 80; left: 0px; top: 0px; width: 120px; height: 100%; background-color: rgb(255, 255, 255); box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.1); transition: all 0.2s linear 0s; }
 nav ul { list-style: outside none none; color: rgb(102, 102, 102); }
-nav ul li { border-bottom: 1px solid rgb(224, 235, 231); position: relative; }
+nav ul li { border-bottom: 1px solid rgb(0, 0, 128); position: relative; }
 nav a { display: block; height: 100%; color: inherit; font-size: inherit; text-decoration: inherit; }
 .blank-head, .area { transition: all 0.2s linear 0s; font-size: 12px; }
 .blank-head { height: 120px; }
@@ -54,7 +54,7 @@ nav a { display: block; height: 100%; color: inherit; font-size: inherit; text-d
 .area i { display: inline-block; margin-top: 15px; width: 24px; height: 34px; background-image: url('../imgs/location.png'); }
 #college { display: table; height: 42px; width: 100%; text-align: center; line-height: 1.1em; border: 0px none; color: rgb(255, 178, 0); font-size: 14px; font-weight: bold; }
 #college span { display: table-cell; vertical-align: middle; }
-.switch { display: inline-block; margin-bottom: 10px; border-bottom: 1px solid rgb(68, 193, 165); font-size: 12px; line-height: 15px; color: rgb(68, 193, 165); text-align: center; height: 16px; }
+.switch { display: inline-block; margin-bottom: 10px; border-bottom: 1px solid rgb(0, 0, 128); font-size: 12px; line-height: 15px; color: rgb(68, 193, 165); text-align: center; height: 16px; }
 li.catg a { color: rgb(102, 102, 102); height: 60px; line-height: 60px; position: relative; transition: box-shadow 0.2s linear 0s; }
 li.catg:hover .sub-nav { display: table; }
 li.catg .sub-nav { display: none; width: 208px; height: 60px; position: absolute; right: -240px; top: 0px; background-color: rgb(40, 189, 160); padding: 0px 16px; z-index: 99; }
@@ -66,15 +66,14 @@ li.catg .sub-nav a:hover { color: rgb(255, 198, 0); }
 .nav-icons img { vertical-align: middle; }
 .catg h3 { float: right; width: 60px; height: 100%; margin-right: 9px; text-align: left; overflow: hidden; font-size: 14px; }
 .area .switch:hover { color: rgb(237, 78, 81); border-bottom-color: rgb(237, 78, 81); }
-li.catg:hover a, li.area:hover > div { box-shadow: 0px 0px 7px rgba(23, 190, 160, 0.3) inset; }
+li.catg:hover a, li.area:hover > div { box-shadow: 0px 0px 7px rgba(0, 0, 128, 0.3) inset; }
 aside { width: 140px; position: absolute; top: 170px; right: 20px; }
 .release-button { display: block; width: 100%; height: 52px; background-image: url('../imgs/release-button-2.png'); text-indent: -9999em; }
 .release-button:hover { background-image: url('../imgs/release-button-1.png'); }
 .helped { width: 146px; height: 166px; margin: 30px 0px 0px -3px; background-image: url('../imgs/helped.png'); background-repeat: no-repeat; text-align: center; }
-.helpers { color: rgb(0, 173, 144); font-family: impact; font-size: 3.17em; line-height: 155px; vertical-align: middle; }
-.qrcode-wr { width: 148px; margin: 30px 0px 0px -3px; }
-.qrcode-wr img { width: 100%; height: auto; }
-.qqgroup { font-weight: normal; margin-top: 30px; font-size: 13px; color: rgb(0, 173, 144); white-space: nowrap; }
+.helpers { color: rgb(0, 0, 128); font-family: impact; font-size: 3.17em; line-height: 155px; vertical-align: middle; }
+
+.qqgroup { font-weight: normal; margin-top: 30px; font-size: 13px; color: rgb(0, 0, 128); white-space: nowrap; }
 .fl-wrapper { margin-top: 35px; }
 .wx-follow, .sina-follow { width: 60px; height: 60px; float: left; border-radius: 30px; background-color: rgb(255, 255, 255); margin: 0px 5px; box-shadow: 0.4px -0.4px 1px rgba(0, 0, 0, 0.1); }
 .wx-follow:hover, .sina-follow:hover { box-shadow: 0px 0px 8px rgba(35, 170, 144, 0.34) inset; }
@@ -106,11 +105,11 @@ p.site-name { width: 110px; height: 21px; margin: 17px auto 0px; background: tra
 #renren-button { float: left; }
 #qq-button { float: right; }
 .login-form-container, .reg-form-container { width: 100%; padding-top: 1px; padding-bottom: 30px; }
-.login-form-container { background-color: rgb(75, 192, 165); }
-.reg-form-container { background-color: rgb(68, 193, 165); }
+.login-form-container { background-color: rgb(0, 0, 128); }
+.reg-form-container { background-color: rgb(0, 0, 128); }
 .login-form-container .input-class, .reg-form-container .input-class { display: block; margin: 20px auto 0px; width: 268px; height: 20px; padding: 10px 0px; color: rgb(75, 192, 165); font-size: 14px; line-height: 20px; text-align: center; background-color: rgb(255, 255, 255); border-radius: 20px; }
 .login-p { display: block; text-align: center; margin-top: 20px; color: rgb(255, 255, 255); }
-.login-input { width: 268px; height: 35px; color: rgb(75, 192, 165); font-size: 14px; text-align: center; background-color: rgb(255, 255, 255); border-radius: 20px; }
+.login-input { width: 268px; height: 35px; color: rgb(0, 0, 128); font-size: 14px; text-align: center; background-color: rgb(255, 255, 255); border-radius: 20px; }
 p.ex { width: 270px; margin: 20px auto 0px; }
 .rem-wr { float: left; line-height: 1em; }
 #rem { vertical-align: middle; }
@@ -123,18 +122,18 @@ a.forget:hover { color: rgb(255, 197, 0); }
 .login-form-container .reg, .reg-form-container .log { display: inline-block; margin: 15px 43% 0px; color: rgb(255, 255, 255); font-size: 1.17em; text-decoration: none; }
 .login-form-container .reg:hover, .reg-form-container .log:hover { text-decoration: underline; }
 #have_login { height: 50px; }
-.avatar { float: left; border: 1px solid rgb(75, 192, 165); padding: 3px; width: 40px; height: 40px; border-radius: 100%; }
+.avatar { float: left; border: 1px solid rgb(0, 0, 128); padding: 3px; width: 40px; height: 40px; border-radius: 100%; }
 #person_info { height: 100%; cursor: pointer; position: relative; }
-.person_name { float: left; color: rgb(0, 172, 144); margin: 15px 0px 0px 15px; max-width: 75px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.person_name { float: left; color: rgb(0, 0, 128); margin: 15px 0px 0px 15px; max-width: 75px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 .grade { float: left; margin: 12px 0px 0px 10px; }
 .grade img { height: 20px; }
 .login_border { width: 170px; display: none; margin-top: 12px; position: absolute; bottom: -10px; }
 .login_slider { display: none; background: rgb(246, 249, 249) none repeat scroll 0% 0%; width: 158px; border-bottom: 1px solid rgb(68, 193, 165); text-align: center; height: 142px; margin-left: 6px; z-index: 500; position: absolute; top: 60px; }
-.login_slider h3 { color: rgb(28, 130, 108); line-height: 350%; }
+.login_slider h3 { color: rgb(0, 0, 128); line-height: 350%; }
 .login_slider ul li { line-height: 270%; list-style-type: none; width: 100px; text-align: left; margin-left: 50px; }
 .login_slider ul li a { color: rgb(102, 102, 102); text-decoration: none; }
-.login_slider ul li:hover a { color: rgb(0, 173, 144); }
-.login_slider ul li:hover { color: rgb(0, 173, 144); list-style-type: disc; }
+.login_slider ul li:hover a { color: rgb(0, 0, 128); }
+.login_slider ul li:hover { color: rgb(0, 0, 128); list-style-type: disc; }
 div.center { position: relative; }
 .ad-baidu { padding-top: 15px; }
 /* ::::: http://hust.2shoujie.com/resource/css/index.css?v=201506100001 ::::: */
@@ -177,12 +176,12 @@ div.comment .avatar::before, .post-comment .avatar::before { content: ""; displa
 .want-commenting::before { background-color: rgb(254, 254, 254); }
 .want-list { margin-top: 30px; }
 .want-list > li { margin-bottom: 20px; }
-.want-list > li:first-child { border-top: 1px solid rgb(75, 191, 165); }
+.want-list > li:first-child { border-top: 1px solid rgb(0, 0, 128); }
 .want-list .want-li { padding: 20px 20px 20px 30px; background-color: rgb(255, 255, 255); position: relative; z-index: 44; }
 .want-list .left { float: left; width: 70px; overflow: hidden; }
 .want-list .left img { border-radius: 50%; width: 100%; height: 70px; }
 .want-list .right { float: right; margin-left: 20px; width: 770px; min-height: 70px; }
-.want-list .want-name { font-size: 16px; color: rgb(27, 129, 108); font-weight: normal; line-height: 120%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.want-list .want-name { font-size: 16px; color: rgb(0, 0, 128); font-weight: normal; line-height: 120%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .want-list .want-detail { font-size: 14px; color: rgb(102, 102, 102); word-break: break-all; line-height: 140%; margin-top: 10px; }
 .want-list .want-attr { color: rgb(133, 141, 142); font-size: 12px; margin-top: 18px; height: 16px; line-height: 16px; }
 .want-list .want-price { font-size: 16px; color: rgb(237, 78, 81); margin-left: 10px; }
@@ -194,7 +193,7 @@ div.comment .avatar::before, .post-comment .avatar::before { content: ""; displa
 background-repeat: no-repeat; background-position: left 1px; cursor: pointer; margin-left: 15px; }
 
 .want-list .want-person { color: rgb(133, 141, 142); display: inline-block; font-size: 14px; padding-left: 20px; background: transparent url('../imgs/ico-per.png') no-repeat scroll left center; margin-right: 10px; height: 18px; line-height: 18px; float: left; }
-.want-list .want-person:hover { color: rgb(75, 191, 165); background-image: url('../imgs/ico-per-hover.png'); }
+.want-list .want-person:hover { color: rgb(0, 0, 128); background-image: url('../imgs/ico-per-hover.png'); }
 .want-tel { display: none; margin-left: 10px; padding-left: 12px; background: transparent url('../imgs/icon_arr.png') no-repeat scroll left center; }
 .want-com { display: block; position: absolute; right: 20px; bottom: 20px; font-size: 13px; color: rgb(75, 192, 165); border: 1px solid rgb(75, 192, 165); border-radius: 15px; width: 106px; height: 30px; line-height: 30px; text-align: center; }
 .want-com .want-com-txt { padding-left: 24px; background: transparent url('../imgs/ico_comment.png') no-repeat scroll left center; display: inline-block; }
@@ -207,7 +206,7 @@ background-repeat: no-repeat; background-position: left 1px; cursor: pointer; ma
 .qiugou-button:hover { background-image: url('../imgs/qiugou-button-1.png'); }
 .wrap-no-btn { margin-top: 30px; text-align: center; }
 .wrap-no-btn > a { display: inline-block; width: 164px; height: 40px; border: 1px solid rgb(239, 199, 94); line-height: 40px; text-align: center; color: rgb(239, 199, 94); font-size: 20px; border-radius: 20px; }
-.wrap-no-btn > a:hover { color: rgb(61, 179, 158); border-color: rgb(61, 179, 158); }
+.wrap-no-btn > a:hover { color: rgb(0, 0, 128); border-color: rgb(0, 0, 128); }
 .pop-tip { position: fixed; z-index: 999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.65); top: 0px; left: 0px; }
 .pop-tip .pop-tip-area { position: absolute; width: 340px; height: 120px; top: 50%; left: 50%; margin-left: -170px; margin-top: -60px; background-color: rgb(255, 255, 255); text-align: center; }
 .pop-tip .pop-tip-txt { display: inline-block; margin-top: 45px; height: 30px; line-height: 30px; padding-left: 42px; background: transparent url('../imgs/identify_suc.png') no-repeat scroll left center; font-size: 20px; color: rgb(26, 188, 156); }

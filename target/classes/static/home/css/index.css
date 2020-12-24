@@ -26,7 +26,7 @@ header { width: 100%; min-width: 960px; height: 120px; position: fixed; left: 0p
 .s-main { font-size: 3em; font-weight: 400; color: rgb(0, 0, 128); }
 .s-submain { font-size: 1.33em; color: rgb(100, 149, 237); text-align: center; }
 .search-box-wr { width: 50%; margin: 0px auto; padding-top: 5px; }
-.search-box { width: 100%; height: 50px; border: 1px solid rgb(68, 193, 165); border-radius: 25px; font-size: 1.33em; color: rgb(0, 0, 128); overflow: hidden; }
+.search-box { width: 100%; height: 50px; border: 1px solid rgb(0, 0, 128); border-radius: 25px; font-size: 1.33em; color: rgb(0, 0, 128); overflow: hidden; }
 .search-submit { float: right; width: 24.13%; height: 100%; background-color: rgb(0, 0, 128); font-size: 16px; color: rgb(255, 255, 255); cursor: pointer; }
 .search-submit:hover { background: rgb(100, 149, 237) none repeat scroll 0% 0%; }
 .input-wr { margin-right: 24.13%; }
@@ -162,9 +162,9 @@ div.center { position: relative; }
 
 
 
-#release-button1 {width: 140px;height: 52px; text-align:center;line-height:48px;font-size:24px;font-family: Arial, "瀹嬩綋";background-position: center center; background-color:#000080;}
+#release-button1 {width: 140px;height: 52px; text-align:center;line-height:48px;font-size:24px;font-family: Arial, "鐎瑰缍�";background-position: center center; background-color:#000080;}
 #release-button1:hover{background: rgb(100,149,237);}
-#release-button2 {width: 140px;height: 52px; text-align:center;line-height:48px;font-size:24px;font-family: Arial, "瀹嬩綋";background-position: center center; background-color:#000080;}
+#release-button2 {width: 140px;height: 52px; text-align:center;line-height:48px;font-size:24px;font-family: Arial, "鐎瑰缍�";background-position: center center; background-color:#000080;}
 #release-button2:hover{background: rgb(100,149,237);}
 .item-list { width: 100%; margin-bottom: 60px; }
 .items { font-size: 0px; list-style: outside none none; text-align: justify; text-align-last: justify; }
@@ -176,8 +176,8 @@ div.center { position: relative; }
 .item .info { padding: 10px; background-color: rgb(255, 255, 255); overflow: hidden; text-overflow: ellipsis; }
 .info > div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; overflow-wrap: break-word; word-break: break-all; }
 
-.info .name { margin-bottom: 6px; width: 100%; height: 1.6em; line-height: 1.6em; font-size: 15px; }
-.name a { color: #000080; text-decoration: none; }
+.info .name { margin-bottom: 6px;height: 1.6em; line-height: 1.6em; float: left;font-size: 15px; }
+.name a { color: #000080; text-decoration: none;text-align: left; }
 .name a:hover { color: #000080; }
 
 .info .department { text-align: left; width: 70%; float: left; font-size: 1em; color: #000080;}
@@ -216,7 +216,7 @@ div.center { position: relative; }
 .page-num, .page-arrow { width: 40px; margin: 0px 5px; background-color: rgb(0,0,128); text-decoration: none; }
 .page-num.cur { background-color: rgb(100,149,237); }
 .page-num:hover { background-color: rgb(100,149,237); }
-.page-arrow { width: 85px; height: 40px; background: transparent url('../imgs/page-arrow.png') no-repeat scroll 0% 0%; }
+.page-arrow { width: 85px; height: 40px; }
 .arrow-left::after { content: ""; margin-right: 0.5em; }
 .arrow-right { text-align: left; background-position: -10px -60px; }
 .arrow-right::before { content: ""; margin-right: 0.5em; }

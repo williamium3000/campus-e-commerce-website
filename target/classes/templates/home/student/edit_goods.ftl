@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<title>${siteName!""}-发布物品</title>
+<title>scut二手市场-发布物品</title>
 <link rel="icon" href="/home/imgs/favicon.ico" type="image/x-icon">
 <link media="all" href="/home/css/release_product.css" type="text/css" rel="stylesheet">
 <link media="all" href="/home/css/index.css" type="text/css" rel="stylesheet">
@@ -11,9 +11,8 @@
   <#include "../common/top_header.ftl"/>
    <div class="container">
             <div class="main center">
-                <img class="release-icon-main" src="/home/imgs/release-icon.png" alt="">
-                <div class="wave-fluid"></div>
-                <div class="release-title">发布商品出售</div>
+                <img src="/home/imgs/release-icon.png" alt="">
+
                 <form action="publish" id="publish-form" method="post">
                 <div class="form-wr">
                     <div class="form-must-wr">
@@ -126,7 +125,6 @@
             </div>
         </div>
  	<#include "../common/right_menu.ftl"/>
-	<#include "../common/bottom_footer.ftl"/> 
 <script  src="/home/js/jquery-3.1.1.min.js"></script>
 <script src="/home/js/common.js"></script>
 <script src="/home/js/add.js"></script>
