@@ -69,7 +69,7 @@
                  <label for="name" class="input-tips2">姓名</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id="name" name="name" maxlength="10" class="inputstyle2"/>
+                        <input type="text" id="name" name="nickname" maxlength="10" class="inputstyle2"/>
                     </div>
                    
                 </li>
@@ -109,7 +109,7 @@
                  <label for="college" class="input-tips2">学院</label>
                     <div class="inputOuter2">
                        
-                        <input type="text" id="college" name="college" maxlength="10" class="inputstyle2"/>
+                        <input type="text" id="college" name="academy" maxlength="10" class="inputstyle2"/>
                     </div>
                    
                 </li>
